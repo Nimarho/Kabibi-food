@@ -1,0 +1,19 @@
+{
+  "name": "kabibi-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map ressources/CSS/main.scss ressources/CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nimarho/Kabibi-food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nimarho/Kabibi-food/issues"
+  },
+  "homepage": "https://github.com/Nimarho/Kabibi-food#readme"
+}
