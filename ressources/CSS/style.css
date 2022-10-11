@@ -3,3 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+footer{
+  background-image: url(../images/footer/img-ng-footer.jpg);
+  color: white
+}
