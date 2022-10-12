@@ -16,19 +16,25 @@ header{
         width: 100vw;
         padding-top: 20px;
         .block__top-logo{
-            width: 40vw;
+            width: 50vw;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-left: 5%;
             nav{
-                width:25vw;
-                font-size: large;
+                width: 40vw;
+                font-size: 1.6rem;
                 justify-content: center;
                 align-content: center;
                 ul{
                     li{
-                        
+                        a{
+                            text-decoration: none;
+                            color: #FFFFFF;
+                        }
+                        a:active{
+                            color: #B1A964;
+                        }                        
                     }
                     display: flex;
                     justify-content:space-around;
@@ -68,13 +74,14 @@ header{
             width: 30vw;
             position: relative;
             p{
-                font-size: 150px;
+                font-size: 7vw;
                 font-family: 'Cinzel', serif;
             }
             img{
                 position: absolute;
                 top: 0;
                 right: 0;
+                width: 10vw;
             }
             a{
                 text-decoration: none;
@@ -93,8 +100,8 @@ header{
             background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%);
             // padding: 50px;
             text-align: center;
-            width: 200px;
-            height: 200px;
+            width: 9.6vw;
+            height: 9.6vw;
             border: 1px solid #ffffff65;
             i{
                 color:$activeLinkColor;
@@ -106,7 +113,9 @@ header{
 
 }
 
-
+.text__couleur-verte{
+    color: #B1A964;
+}
 
 .list__no-bullets{
     list-style-type: none;
