@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Nimarho/Kabibi-food/issues"
   },
-  "homepage": "https://github.com/Nimarho/Kabibi-food#readme"
+  "homepage": "https://github.com/Nimarho/Kabibi-food#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
 }
