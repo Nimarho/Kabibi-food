@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../images/slider/img_bg_slider_home01.jpg);
+  color: #FFFFFF;
+}
+header .block__big-play-button {
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+}
+header .block__big-play-button i {
+  color: #B1A964;
+}
+header .block__top-bar {
+  width: 100vw;
+}
+header .block__top-bar .block__top-logo {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+header .block__top-bar .link__contact {
+  width: 25vw;
+}
+header .block__top-bar .link__contact .link__book {
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #B1A964;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.list__no-bullets {
+  list-style-type: none;
+}
+.list__no-bullets li {
+  padding-left: 5%;
+}
+
+.block__flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.centrerY {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+footer {
+  background-image: url(../images/footer/img-ng-footer.jpg);
+  color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */

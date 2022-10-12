@@ -127,3 +127,59 @@ footer {
   background-image: url(../images/footer/img-ng-footer.jpg);
   color: #FFFFFF;
 }
+
+.footer__logo{
+  text-align: center;
+}
+
+.footer__alignement{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: space-around;
+  padding-top: 60px;
+  margin-top: auto;
+  height:10%
+  }
+
+.footer__card{
+  line-height: 2.5;
+  font-weight: 100;
+  font-size: 17px;
+  text-align: left;
+  color: rgb(160, 156, 156);
+}
+
+.footer__h2{
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.iconeVerte{
+  color:rgb(91, 189, 91)
+}
+
+.footer__copyright{
+  color: rgb(160, 156, 156);
+}
+
+.hr{
+  margin: 55px;
+  color:#0707077a
+}
+
+.footer__link{
+  color:rgb(91, 189, 91);
+  text-decoration: none;
+}
+
+.footer__logo-cuillere{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__p-copyright{
+  text-align: left;
+  max-width: 100%;
+	height: auto;
+}
