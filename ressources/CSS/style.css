@@ -5,29 +5,40 @@
 }
 
 header {
-  background-image: url(../images/slider/img_bg_slider_home01.jpg);
+  background: linear-gradient(135deg, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%), url(../images/slider/img_bg_slider_home01.jpg) no-repeat center;
   color: #FFFFFF;
-}
-header .block__big-play-button {
-  border-radius: 100%;
-  background-color: #FFFFFF;
-  text-align: center;
-  width: 130px;
-  height: 130px;
-}
-header .block__big-play-button i {
-  color: #B1A964;
+  font-family: sans-serif;
+  height: 950px;
 }
 header .block__top-bar {
   width: 100vw;
+  padding-top: 20px;
 }
 header .block__top-bar .block__top-logo {
   width: 40vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+}
+header .block__top-bar .block__top-logo nav {
+  width: 25vw;
+  font-size: large;
+  justify-content: center;
+  align-content: center;
+}
+header .block__top-bar .block__top-logo nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
 }
 header .block__top-bar .link__contact {
-  width: 25vw;
+  display: flex;
+  align-items: center;
+  width: 20vw;
+}
+header .block__top-bar .link__contact p {
+  font-size: large;
 }
 header .block__top-bar .link__contact .link__book {
   text-transform: uppercase;
@@ -38,13 +49,54 @@ header .block__top-bar .link__contact .link__book {
   background-color: #B1A964;
   padding: 20px;
   border-radius: 10px;
+  margin-right: 5%;
+}
+header .block__banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  height: 800px;
+  width: 100vw;
+}
+header .block__banner .block__explor {
+  width: 30vw;
+  position: relative;
+}
+header .block__banner .block__explor p {
+  font-size: 150px;
+  font-family: "Cinzel", serif;
+}
+header .block__banner .block__explor img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .block__banner .block__explor a {
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: 3px solid rgba(56, 60, 63, 0.768627451);
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+header .block__banner .block__big-play-button {
+  border-radius: 100%;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 51%);
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.3960784314);
+}
+header .block__banner .block__big-play-button i {
+  color: #B1A964;
 }
 
 .list__no-bullets {
   list-style-type: none;
-}
-.list__no-bullets li {
-  padding-left: 5%;
 }
 
 .block__flex {
