@@ -24,13 +24,15 @@ header{
     .block__top-bar{
         width: 100vw;
         .block__top-logo{
-            width: fit-content;
+            width: 40vw;
+            display: flex;
+            justify-content: space-between;
         }
         .link__contact{
             // position: absolute;
             // right: 50px;
             // top: 10px;
-            width: fit-content;
+            width: 25vw;
             .link__book{
                 text-transform: uppercase;
                 font-size: large;
@@ -45,6 +47,8 @@ header{
     }
 }
 
+
+
 .list__no-bullets{
     list-style-type: none;
     li{
@@ -55,6 +59,7 @@ header{
 .block__flex{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 .centrerY{
