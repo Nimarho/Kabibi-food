@@ -123,9 +123,12 @@ header .block__banner .block__big-play-button i {
   transform: perspective(1px) translateY(-50%);
 }
 
+
 footer {
   background-image: url(../images/footer/img-ng-footer.jpg);
   color: #FFFFFF;
+  width: 100vw;
+  height: 703px;
 }
 
 .footer__logo{
@@ -156,30 +159,69 @@ footer {
 }
 
 .iconeVerte{
-  color:rgb(91, 189, 91)
+  color:#C8A96A;
 }
 
 .footer__copyright{
   color: rgb(160, 156, 156);
+  max-width: 100%;
+	height: auto;
+  position: relative;
+  top: 243px;
+  left: 5%;
 }
 
-.hr{
-  margin: 55px;
-  color:#0707077a
+.hr__ligne{
+  margin: 65px;
+  color: #07070744;
+  position: relative;
+  top: 275px;
+  opacity: 20%;
 }
 
 .footer__link{
-  color:rgb(91, 189, 91);
+  color:#C8A96A;
   text-decoration: none;
 }
 
 .footer__logo-cuillere{
   display: flex;
   justify-content: center;
+  margin:auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 130px;
 }
 
-.footer__p-copyright{
-  text-align: left;
+.footer__image-cuillere{
   max-width: 100%;
 	height: auto;
+  scale: 0.5;
+}
+
+#emailAddress{
+  width: 94%;
+  padding: 6%;
+}
+
+button{
+  scale: 390%;
+  background-color: #C8A96A;
+  color: #FFFFFF;
+  border-style: none;
+}
+
+.footer__bas{
+  display: flex;
+  width: 95vw;
+  position: relative;
+  
+}
+
+.footer__reseaux{
+  scale:150%;
+  position: relative;
+  top: 235px;
+  left: 65%;
 }
