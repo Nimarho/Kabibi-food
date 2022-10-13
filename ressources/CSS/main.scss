@@ -183,6 +183,66 @@ header{
     }
 }
 
+#category{
+    height: 954px;
+    width: 100vw;
+    background:linear-gradient(90deg,#FAF7F065 0%, #faf7f065 100%) ,url(../images/banner/imgbgcategory.jpg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Cinzel', serif;
+    .category__filigrane{
+        color: rgba(0, 0, 0, 0.03);
+        text-transform: uppercase;
+        font-size: 340px;
+        position: absolute;
+        top : 0px;
+        left: 0px;
+    }
+    .category__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .category__title-main{
+            font-size: 50px;
+        }
+        .category__title-sub{
+            font-size: 2rem;
+        }
+    }
+    .category__choices{
+        display: grid;
+        grid: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr ;
+        gap: 2%;
+        width: 75vw;
+        .category__choices-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #B1A964;
+            padding: 60px 20px;
+            .category__choices-card-icon{
+                width: 10px;
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .category__choices-card-text{
+                font-size: 1.5rem;
+            }
+            .category__choices-card-arrow{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
 .text__couleur-verte{
     color: #B1A964;
 }
