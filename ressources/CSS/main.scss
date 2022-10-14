@@ -15,6 +15,8 @@ header{
     .block__top-bar{
         width: 100vw;
         padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
         .block__top-logo{
             width: 50vw;
             display: flex;
@@ -74,14 +76,14 @@ header{
             width: 30vw;
             position: relative;
             p{
-                font-size: 7vw;
+                font-size: 150px;
                 font-family: 'Cinzel', serif;
             }
             img{
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 10vw;
+                
             }
             a{
                 text-decoration: none;
@@ -98,20 +100,148 @@ header{
             border-radius: 100%;
             background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%);
-            // padding: 50px;
             text-align: center;
-            width: 9.6vw;
-            height: 9.6vw;
+            width: 200px;
+            height: 200px;
             border: 1px solid #ffffff65;
             i{
                 color:$activeLinkColor;
             }
         }
     }
+    @media (min-width: 430px) and (max-width: 1080px){
+        .block__top-bar{
+            .block__top-logo{
+                width: 70vw;
+                nav{
+                    width: 50vw;
+                }
+            }
+            .link__contact{
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+        .block__banner{
+            height: 680px;
+            .block__explor{
+                width: 600px;
+                p{
+                    font-size: 100px;
+                }
+            }
+            .block__big-play-button{
+                
+            }
+        }
+    }
 
-    
-
+    @media (max-width: 430px){
+        .block__top-bar{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            .block__top-logo{
+                width: 100vw;
+                justify-content: space-around;
+                flex-direction: column;
+                margin: 0;
+                gap: 5px;
+                nav{
+                    flex-wrap: nowrap;
+                    ul{
+                        width: 160px;
+                    }
+                }
+            }
+            .link__contact{
+                width: 100vw;
+                flex-direction: column;
+                gap: 10px;
+                .link__book{
+                    margin-right: 0;
+                }
+            }
+        }
+        .block__banner{
+            height: 600px;
+            .block__explor{
+                width: 100vw;
+                p{
+                    font-size: 85px;
+                    z-index: 3;
+                }
+                img{
+                    z-index: 1;
+                }
+            }
+            .block__big-play-button{
+                display: none;
+            }
+        }
+    }
 }
+
+#category{
+    height: 954px;
+    width: 100vw;
+    background:linear-gradient(90deg,#FAF7F065 0%, #faf7f065 100%) ,url(../images/banner/imgbgcategory.jpg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Cinzel', serif;
+    .category__filigrane{
+        color: rgba(0, 0, 0, 0.03);
+        text-transform: uppercase;
+        font-size: 340px;
+        position: absolute;
+        top : 0px;
+        left: 0px;
+    }
+    .category__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .category__title-main{
+            font-size: 50px;
+        }
+        .category__title-sub{
+            font-size: 2rem;
+        }
+    }
+    .category__choices{
+        display: grid;
+        grid: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr ;
+        gap: 2%;
+        width: 75vw;
+        .category__choices-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #B1A964;
+            padding: 60px 20px;
+            .category__choices-card-icon{
+                width: 10px;
+                font-size: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .category__choices-card-text{
+                font-size: 1.5rem;
+            }
+            .category__choices-card-arrow{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
 
 .text__couleur-verte{
     color: #B1A964;
