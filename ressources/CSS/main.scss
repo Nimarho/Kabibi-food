@@ -130,9 +130,7 @@ header{
                     font-size: 100px;
                 }
             }
-            .block__big-play-button{
-                
-            }
+            
         }
     }
 
@@ -193,7 +191,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    font-family: 'Cinzel', serif;
+    font-family: 'Cormorant Garamond', serif;
     .category__filigrane{
         color: rgba(0, 0, 0, 0.03);
         text-transform: uppercase;
@@ -209,6 +207,8 @@ header{
         flex-direction: column;
         .category__title-main{
             font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
         }
         .category__title-sub{
             font-size: 2rem;
@@ -217,15 +217,16 @@ header{
     .category__choices{
         display: grid;
         grid: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr ;
-        gap: 2%;
-        width: 75vw;
+        gap: 40px;
+        width: 1280px;
         .category__choices-card{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #B1A964;
-            width: 170px;
+            width: 180px;
+            height: 200px;
             .category__choices-card-icon{
                 width: 10px;
                 font-size: 50px;
@@ -238,6 +239,50 @@ header{
             }
             .category__choices-card-arrow{
                 font-size: 1.5rem;
+            }
+        }
+    }
+    @media (min-width: 620px) and (max-width: 1280px){
+        .category__choices{
+            width: 620px;
+            grid: 1fr 1fr / 1fr 1fr 1fr;
+        }
+    }
+    @media (max-width: 620px) and (min-width:430px){
+        .category__title-main{
+            font-size: 40px;
+        }
+        .category__choices{
+            width: 430px;
+            grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+            margin: 40px 0;
+        }
+    }
+    @media (max-width: 430px){
+        .category__title-main{
+            font-size: 30px;
+        }
+        .category__choices{
+            width: 180px;
+            grid: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+            margin: 40px 0;
+        }
+    }
+
+}
+
+#aboutUs{
+    .aboutUs__haut{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        .aboutUs__haut-main-pic{
+            margin-top: -100px;
+            z-index: 3;
+            
+            img{
+                padding: 30px;
+                border-radius: 100%;
             }
         }
     }
