@@ -249,11 +249,38 @@ header .block__banner .block__big-play-button i {
   transform: perspective(1px) translateY(-50%);
 }
 
+#blog{
+  display: flex;
+  width: 100vw;
+}
+
+.blog__photos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  
+}
+
+.blog__cadres-photos{
+  display: flex;
+  gap: 3%;  
+}
+
+.blog__icones{
+  display: flex;
+  padding-bottom: 7%;
+  gap: 125px;
+  justify-content: center;
+}
+
 footer {
   background-image: url(../images/footer/img-ng-footer.jpg);
   color: #FFFFFF;
   width: 100vw;
-  height: 703px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo{
@@ -264,11 +291,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 60px;
   margin-top: auto;
-  height:10%
-  }
+  height:10%;
+  gap: 5vw;
+    }
 
 .footer__card{
   line-height: 2.5;
@@ -276,8 +304,18 @@ footer {
   font-size: 17px;
   text-align: left;
   color: rgb(160, 156, 156);
+  width: 15vw;
 }
-
+@media (max-width: 1080px) and (min-width: 430px){
+  .footer__card{
+    width: 40vw;
+  }
+}
+@media (max-width: 430px){
+  .footer__card{
+    width: 80vw;
+  }
+}
 .footer__h2{
   font-size: 30px;
   color: #FFFFFF;
@@ -291,17 +329,13 @@ footer {
   color: rgb(160, 156, 156);
   max-width: 100%;
 	height: auto;
-  position: relative;
-  top: 243px;
-  left: 5%;
+  
 }
 
 .hr__ligne{
-  margin: 65px;
-  color: #07070744;
-  position: relative;
-  top: 275px;
-  opacity: 20%;
+  color: #f3eded88;
+  width: 75vw;
+  margin-top: 105px;
 }
 
 .footer__link{
@@ -310,28 +344,24 @@ footer {
 }
 
 .footer__logo-cuillere{
-  display: flex;
-  justify-content: center;
-  margin:auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 130px;
+ margin-top: -85px;
 }
 
 .footer__image-cuillere{
   max-width: 100%;
 	height: auto;
   scale: 0.5;
+  
+  
 }
 
 #emailAddress{
-  width: 94%;
+  width: 90%;
   padding: 6%;
 }
 
 button{
-  scale: 390%;
+  scale: 345%;
   background-color: #C8A96A;
   color: #FFFFFF;
   border-style: none;
@@ -339,14 +369,30 @@ button{
 
 .footer__bas{
   display: flex;
-  width: 95vw;
-  position: relative;
-  
+  width: 100vw;
+  justify-content: space-between;
+  padding-bottom: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  flex-wrap: wrap;
+  margin-top: -90px;
 }
 
 .footer__reseaux{
-  scale:150%;
-  position: relative;
-  top: 235px;
-  left: 65%;
+  display: flex;
+  width: 120px;
+  justify-content: space-around;
+  gap: 10px;
+}
+.footer__reseaux-taille{
+  scale: 150%;
+}
+
+.footer__separation{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  align-content: center;
+  gap: -50px;
 }
