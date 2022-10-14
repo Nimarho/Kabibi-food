@@ -171,7 +171,8 @@ header .block__banner .block__big-play-button i {
 }
 
 #category {
-  height: 954px;
+  /*height: 954px;*/
+  min-height: 954px;
   width: 100vw;
   background: linear-gradient(90deg, rgba(250, 247, 240, 0.3960784314) 0%, rgba(250, 247, 240, 0.3960784314) 100%), url(../images/banner/imgbgcategory.jpg);
   position: relative;
@@ -213,7 +214,7 @@ header .block__banner .block__big-play-button i {
   justify-content: center;
   align-items: center;
   background-color: #B1A964;
-  padding: 60px 20px;
+  width: 170px;
 }
 #category .category__choices .category__choices-card .category__choices-card-icon {
   width: 10px;
@@ -248,7 +249,6 @@ header .block__banner .block__big-play-button i {
   top: 50%;
   transform: perspective(1px) translateY(-50%);
 }
-
 
 footer {
   background-image: url(../images/footer/img-ng-footer.jpg);
