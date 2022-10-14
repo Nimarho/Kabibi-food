@@ -184,7 +184,7 @@ header{
 }
 
 #category{
-    height: 954px;
+    /*height: 954px;*/
     width: 100vw;
     background:linear-gradient(90deg,#FAF7F065 0%, #faf7f065 100%) ,url(../images/banner/imgbgcategory.jpg);
     position: relative;
@@ -224,7 +224,7 @@ header{
             justify-content: center;
             align-items: center;
             background-color: #B1A964;
-            padding: 60px 20px;
+            width: 170px;
             .category__choices-card-icon{
                 width: 10px;
                 font-size: 50px;
